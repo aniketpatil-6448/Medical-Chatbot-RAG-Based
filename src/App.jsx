@@ -117,7 +117,7 @@ const App = () => {
     const lastUserMessage = conversation.messages.filter(msg => msg.role === "user").pop();
     if (!lastUserMessage) return;
     try {
-  const res = await fetch(import.meta.env.VITE_API_URL + "/api/chat", {
+      const res = await fetch("http://localhost:8080/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: lastUserMessage.content }),
