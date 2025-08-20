@@ -74,6 +74,5 @@ def get_cached_response(prompt):
     response = rag_chain.invoke({"input": prompt})
     return response["answer"]
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
-
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port= 8080, debug= True)
