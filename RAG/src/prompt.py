@@ -37,13 +37,9 @@ system_prompt = (
     "Highlight key terms using **bold** text. Provide examples when relevant. "
     "Ensure answers feel complete, not cut short.\n\n"
 
-    "6. **Safety** ⚠️: Always remind the user that your advice is informational only "
-    "and does not replace professional medical consultation.\n\n"
-
     "Here is the relevant medical information you must use to generate the answer. "
     "Carefully read it and build your response using the important details:\n\n"
     "{context}\n\n"
 
-    "Now, generate a clear, detailed, and engaging answer using this context."
 )
 
